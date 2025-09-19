@@ -7,7 +7,8 @@ void check_balance(double balance);
 void display_menu(); 
 int get_choice(); 
 
-int main() {
+int main() 
+{
     double balance = 0.00;
     int choice; 
 
@@ -36,7 +37,8 @@ int main() {
 }
 
 // Show the ATM menu
-void display_menu() {
+void display_menu() 
+{
     printf("\n****** ALU ATM MENU ******\n");
     printf("1. Check Balance\n"); 
     printf("2. Deposit\n"); 
@@ -46,12 +48,14 @@ void display_menu() {
 }
 
 // Show balance
-void check_balance(double balance) {
+void check_balance(double balance) 
+{
     printf("Your current balance is: RWF %.2f\n", balance); 
 }
 
 // Logic for deposit operation
-double deposit(double balance) {
+double deposit(double balance) 
+{
     double amount; 
     printf("Enter amount to deposit(RWF): ");
     scanf("%lf", &amount); 
@@ -67,7 +71,8 @@ double deposit(double balance) {
 }
 
 // Logic for withdraw operation
-double withdraw(double balance) {
+double withdraw(double balance) 
+{
     double amount; 
     printf("Enter amount to withdraw(RWF): "); 
     scanf("%lf", &amount); 
@@ -88,7 +93,8 @@ double withdraw(double balance) {
 }
 
 // Validate and get user choice 
-int get_choice() {
+int get_choice() 
+{
     int choice; 
     scanf("%d", &choice); 
     return choice; 
